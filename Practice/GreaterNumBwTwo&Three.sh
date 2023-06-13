@@ -14,7 +14,7 @@ then
 echo " a is greater than b : $a > $b "
 elif [[ $a -lt $b ]]
 then
-echo " b is greater than a " $b > $a "
+echo " b is greater than a : $b > $a "
 else
 echo " both num are equal : $a = $b "
 fi
@@ -27,15 +27,15 @@ echo " Enter num 2:"
 read b
 echo " Enter num 3:"
 read c
-if [[ $a -gt $b ] && [ $a -gt $c ]]
+if [ $a -gt $b ] && [ $a -gt $c ]
 then 
 echo " a is greater than b and c : $a > $b & $c "
-elif [[ $b -gt $a ] && [ $b -gt $c ]]
+elif [ $b -gt $a ] && [ $b -gt $c ]
 then
-echo " b is greater than a and c " $b > $a & $c "
-elif [[ $c -gt $a ] && [ $c -gt $b ]]
+echo " b is greater than a and c : $b > $a & $c "
+elif [ $c -gt $a ] && [ $c -gt $b ]
 then
-echo " c is greater than a and b " $c > $a & $b "
+echo " c is greater than a and b : $c > $a & $b "
 else
 echo " both num are equal : $a = $b = $c "
 fi
